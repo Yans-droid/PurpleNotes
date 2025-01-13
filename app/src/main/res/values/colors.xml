@@ -2,4 +2,14 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="ungu">#8996d0</color>
+    <color name="gray">#ECECEC</color>
+    <color name="darkgray">#656565</color>
+    <color name="darkgreydisable">#8F8F8F</color>
+
+    <color name ="colorText">#282828</color>
+    <color name ="statusColor">#EDEDED</color>
+    <color name ="strokeColor">#1E88E5</color>
+    <color name ="opaqueBG">#61000000</color>
+
 </resources>

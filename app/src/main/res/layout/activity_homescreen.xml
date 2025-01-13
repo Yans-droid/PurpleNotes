@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/homescreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#8996d0">
+
+    <TextView
+        android:id="@+id/viewPurplenotes"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:text="P U R P L E N O T E S"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/isitext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewPurplenotes"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/textJudul"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/judul_background"
+            android:hint="Judul"
+            android:maxHeight="50dp"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textJudul"
+            android:background="@drawable/edit_text_background"
+            android:hint="Tulis Catatan"
+            android:inputType="textMultiLine"
+            android:maxLines="10"
+            android:scrollbars="vertical"
+            android:textSize="16sp" />
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp">
+
+        <Button
+            android:id="@+id/btnplay"
+            android:visibility="gone"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:text="Play"
+            android:src="@drawable/ic_play"
+            android:layout_gravity="left"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgView"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="10dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tab_button"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/tab_background"
+        android:orientation="horizontal"
+        android:layout_below="@+id/isitext"
+        android:layout_marginTop="10dp">
+
+        <ImageButton
+            android:id="@+id/buttonVoiceNote"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:src="@mipmap/ic_microphone_round" />
+
+        <ImageButton
+            android:id="@+id/button_image"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:src="@mipmap/ic_foto_logo_round"
+            android:layout_toRightOf="@+id/buttonVoiceNote"/>
+        <ImageButton
+            android:id="@+id/newFileButton"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_margin="15dp"
+            android:layout_gravity="center"
+            android:background="@drawable/circle_background"
+            android:src="@mipmap/ic_launcher_logonewfile"/>
+
+        <ImageButton
+            android:id="@+id/button_save"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:src="@mipmap/ic_savelogo_round"
+            android:layout_toRightOf="@+id/button_image"/>
+        <ImageButton
+            android:id="@+id/button_update"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_ripple"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

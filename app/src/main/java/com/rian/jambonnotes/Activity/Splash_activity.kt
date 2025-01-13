@@ -1,8 +1,9 @@
-package com.rian.jambonnotes
+package com.rian.jambonnotes.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import androidx.appcompat.app.AppCompatActivity
+import com.rian.jambonnotes.R
 
 class splash_activity :AppCompatActivity (){
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -10,7 +11,7 @@ class splash_activity :AppCompatActivity (){
         setContentView(R.layout.activity_splash)
 
         Handler().postDelayed({
-            val intent = Intent(this,MainActivity::class.java)
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
             finish()
         },3000)//Durasi 3 detik
